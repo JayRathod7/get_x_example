@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get_x/screen/first_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,9 +13,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: InkWell(
-        onTap: () {},
-        child: Center(
+      body: Center(
+        child: InkWell(
+          onTap: () {
+            Get.to(FirstScreen());
+          },
           child: Container(
             height: 70,
             width: 100,
