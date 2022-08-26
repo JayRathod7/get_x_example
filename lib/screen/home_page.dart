@@ -10,6 +10,23 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: InkWell(
+        onTap: () {},
+        child: Center(
+          child: Container(
+            height: 70,
+            width: 100,
+            decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(12),
+                color: Colors.blue),
+            child: Center(
+              child: Text("click button"),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
