@@ -18,6 +18,7 @@ class _FirstScreenState extends State<FirstScreen> {
         itemCount: 10,
         itemBuilder: (context, index) {
           return Container(
+            padding: EdgeInsets.only(top: 10,bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
