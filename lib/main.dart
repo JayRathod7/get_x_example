@@ -22,5 +22,5 @@ class MyApp extends StatelessWidget {
   }
 }
 void init()async{
-  await ApiService.init;
+  await ApiService.init();
 }
