@@ -12,6 +12,7 @@ class DataController extends GetxController {
   }
 
   void fetchData() async {
+
     isLoding.value = true;
     List<PostModel> postModel = await ApiService.getData();
     if (postModel != null) {
